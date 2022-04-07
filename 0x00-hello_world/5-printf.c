@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /** 
  * main - Entry point
  * Return: when 0 (success)
