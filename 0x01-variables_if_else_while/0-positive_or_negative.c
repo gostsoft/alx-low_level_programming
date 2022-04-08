@@ -3,16 +3,15 @@
 #include <time.h>
 
 
-/** betty style doc for function main goes there 
+/** 
  * main - prints is positive and negetive
  * Return: returns zero if program exits weel
   */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 	/* your code goes here */
 if (n > 0)
 {
