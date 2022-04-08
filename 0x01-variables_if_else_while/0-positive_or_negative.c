@@ -3,7 +3,10 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/** betty style doc for function main goes there 
+ * main - prints is positive and negetive
+ * Return: returns zero if program exits weel
+  */
 int main(void)
 {
 	int n;
@@ -21,7 +24,7 @@ printf("%d is zero\n", n);
 }
 else
 {
-printf("%d is negetive\n", n);
+printf("%d is negative\n", n);
 }
-	return (0);
+return (0);
 }
