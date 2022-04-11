@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** 
+/**
  * main - prints is positive and negetive
+ *
  * Return: returns zero if program exits weel
   */
 int main(void)
