@@ -5,6 +5,7 @@
  * or zero
  *Return: returns zero if program exits well.
  */
+
 int main(void)
 {
 	char c = 'z';
