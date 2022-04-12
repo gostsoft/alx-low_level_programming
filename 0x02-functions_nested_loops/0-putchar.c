@@ -1,8 +1,8 @@
 #include <stdio.h>
-/** 
- * main - where all functions will begin from
+/**
+ * main - Entry point
  *
- * Return : return zero if no error
+ * Return: return zero if no error
  */
 int main(void)
 {
