@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - where all functions begins
- iiii*
+ *
  * Return: returns zero if there are no errors at all
  */
 
@@ -10,7 +10,7 @@
 {
 	char alphabet;
 
-	for (alphabet ='a'; alphabet <= 'z'; alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 _putchar(alphabet);
 	}

@@ -4,6 +4,7 @@
  *
  * Return: return zero if no error
  */
+int nain(void)
 {
 	_putchar('_');
 	_putchar('p');
