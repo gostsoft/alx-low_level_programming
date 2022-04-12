@@ -5,9 +5,9 @@
  * Return: returns zero if there are no errors at all
  */
 
-int main(void)
+
+	void print_alphabet(void)
 {
-	void print_alphabet(void);
 	char alphabet;
 
 	for (alphabet ='a'; alphabet <= 'z'; alphabet++)
@@ -15,5 +15,4 @@ int main(void)
 _putchar(alphabet);
 	}
 	_putchar('\n');
-	return (0);
 }
