@@ -15,6 +15,8 @@ continue;
 else
 {
 _putchar(c + '0');
-_putchar('\n');
+c++;
 }
+
+_putchar('\n');
 }
