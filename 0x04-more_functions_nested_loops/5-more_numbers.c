@@ -3,13 +3,13 @@
  * more_numbers - prints 10 times the numbers, from 0 to 14
  *
  * Return: Always 0.
- **/
+ */
 
 void more_numbers(void)
 {
 	int i;
-	int num1;
-	int num2;
+	int first_number;
+	int second_number;
 	int result;
 
 	i = 0;
@@ -20,17 +20,17 @@ void more_numbers(void)
 		{
 			if (result < 10)
 			{
-				num2 = result;
+				second_number = result;
 			}
 
 			else
 			{
-				num1 = result / 10;
-				num2 = result % 10;
-				_putchar (num1 + '0');
+				first_number = result / 10;
+				second_number = result % 10;
+				_putchar (first_number + '0');
 			}
 
-			_putchar (num2 + '0');
+			_putchar (second_number + '0');
 
 			result++;
 		}
