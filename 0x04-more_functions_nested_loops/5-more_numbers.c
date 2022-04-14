@@ -10,32 +10,32 @@ void more_numbers(void)
 	int i;
 	int num1;
 	int num2;
-	int sum;
+	int result;
 
 	i = 0;
-	sum = 0;
+	result = 0;
 	while (i < 10)
 	{
-		while (sum <= 14)
+		while (result <= 14)
 		{
-			if (sum < 10)
+			if (result < 10)
 			{
-				num2 = sum;
+				num2 = result;
 			}
 
 			else
 			{
-				num1 = sum / 10;
-				num2 = sum % 10;
+				num1 = result / 10;
+				num2 = result % 10;
 				_putchar (num1 + '0');
 			}
 
 			_putchar (num2 + '0');
 
-			sum++;
+			result++;
 		}
 		i++;
-		sum = 0;
+		result = 0;
 		_putchar ('\n');
 	}
 
