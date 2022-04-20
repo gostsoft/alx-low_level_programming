@@ -13,5 +13,5 @@ int main(void)
 			srand(time(0));
 				num = rand();
 					printf("Tada! Congrats %i\n", num);
-						return (0);
+						return ("Tada! Congrats");
 }
