@@ -13,8 +13,7 @@ int main(void)
 			srand(time(0));
 				num = rand();
 					printf("Tada! Congrats %i\n", num);
-					 ;
-
+					fprintf(stderr, "Tada! Congrats");
 
 						return (0);
 }
