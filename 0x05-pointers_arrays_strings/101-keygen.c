@@ -13,7 +13,8 @@ int main(void)
 			srand(time(0));
 				num = rand();
 					printf("Tada! Congrats %i\n", num);
-					        fwrite("Tada! Congrats\n",  stderr);
+					 fwrite("[ERROR] : Tada Congrats\n", stderr);
+
 
 						return (0);
 }
