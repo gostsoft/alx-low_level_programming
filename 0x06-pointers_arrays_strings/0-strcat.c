@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  *_strcat - concatenates two strings
  *@dest: A pointer to a character that will be changed
@@ -6,12 +6,12 @@ include "main.h"
  *Return: dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *newloc, char *src)
 {
 	int i, j;
 
 	i = 0;
-	while (dest[i] != '\0')
+	while (newloc[i] != '\0')
 	{
 		i++;
 	}
@@ -19,11 +19,11 @@ char *_strcat(char *dest, char *src)
 	j = 0;
 	while (src[j] != '\0')
 	{
-		dest[i] = src[j];
+		newloc[i] = src[j];
 		j++;
 		i++;
 	}
-	dest[i] = '\0';
+	newloc[i] = '\0';
 
-	return (dest);
+	return (newloc);
 }
