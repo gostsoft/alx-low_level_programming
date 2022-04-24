@@ -7,7 +7,7 @@ include "main.h"
  *Return: dest
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *newcopy, char *src, int n)
 
 {
 	int i;
@@ -15,16 +15,16 @@ char *_strncpy(char *dest, char *src, int n)
 	i = 0;
 	while (i < n && src[i] != '\0')
 	{
-		dest[i] = src[i];
+		newcopy[i] = src[i];
 		i++;
 	}
 
 	while (i < n)
 	{
-		dest[i] = '\0';
+		newcopy[i] = '\0';
 		i++;
 	}
 
-	return (dest);
+	return (newcopy);
 
 }
