@@ -1,5 +1,3 @@
-!<arch>
-0-isupper.c/    0           0     0     644     353       `
 #include "main.h"
 
 /**
@@ -20,4 +18,3 @@ int _isupper(char c)
 
   return (value);
 }
-
