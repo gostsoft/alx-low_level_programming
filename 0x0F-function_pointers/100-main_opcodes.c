@@ -1,72 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
- * op_add - addition
- * @a: sumnd 1
- * @b: sumnd 2
- * Return: rsult
+ *main -  prints the opcodes of its own main function.
+ *@argc: integer value.
+ *@argv: character value.
+ *
+ *Return: 0(success)
  */
-
-int op_add(int a, int b)
+int main(int argc, char *argv[])
 {
-	return (a + b);
-}
+	int i;
 
-/**
- * op_sub - subtraction
- * @a: minuend
- * @b: sustrnd
- * Return: result
- */
-
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
-
-/**
- * op_mul - multiplication
- * @a: multp 1
- * @b: multp 2
- * Return: result
- */
-
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
-
-/**
- * op_div - division
- * @a: divisr
- * @b: dividndo
- * Return: reult
- */
-
-int op_div(int a, int b)
-{
-	if (b)
+	if (argc != 2)
 	{
-		return (a / b);
+		printf("Error\n");
+		exit(1);
 	}
-	printf("Error\n");
-	exit(100);
-}
-
-/**
- * op_mod - modulo
- * @a: vaper 1
- * @b: vaper 2
- * Return: result
- */
-
-int op_mod(int a, int b)
-{
-	if (b)
+	if (atoi(argv[1]) < 0)
 	{
-		return (a % b);
+		printf("Error\n");
+		exit(2);
 	}
-	printf("Error\n");
-	exit(100);
+	for (i = 0; i < atoi(argv[1]) - 1; i++)
+		printf("%02hhx ", ((char *)main)[i]);
+	printf("%02hhx\n", ((char *)main)[i]);
+	return (0);
 }
